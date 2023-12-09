@@ -14,7 +14,7 @@ typedef struct {
 typedef stack_t* hstack_t;
 
 hstack_t stack_new(void) {
-    hstack_t stack = malloc(sizeof(stack_t));
+    hstack_t stack = (stack_t*)malloc(sizeof(stack_t));
     if (stack == NULL) {
         return NULL;
     }
